@@ -1,0 +1,41 @@
+.page{
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.time{
+  font-size: 380px;
+}
+.dot{
+  animation: twinkling 1s infinite ease-in-out;
+}
+.second{
+  font-size: 20px;
+}
+.get{
+  font-size: 20px;
+  position: absolute;
+  top:30px;
+}
+.year{
+  position: absolute;
+  bottom:30px;
+  font-size: 16px;
+  color:white;  
+  right: 10px;
+}
+@keyframes twinkling{	/*透明度由0到1*/
+	0%{
+		opacity:0;				/*透明度为0*/
+	}
+	100%{
+		opacity:1;				/*透明度为1*/
+	}
+}
